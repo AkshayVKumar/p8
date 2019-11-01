@@ -1,0 +1,10 @@
+{% extends 'img.html' %}
+
+{% block body_block %}
+{% if objects %}
+{% for obj in objects %}
+<img src={{obj.img.url}} alt="image not found">
+{% endfor %}
+{% endif %}
+
+{% endblock body_block %}
